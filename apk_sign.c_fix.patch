@@ -4,7 +4,7 @@
  
  #endif
  
--bool is_manager_apk(char *path)
+-bool ksu_is_manager_apk(char *path)
 +bool ksu_is_manager_apk(char *path)
  {
 +#ifdef CONFIG_KSU_SUSFS
