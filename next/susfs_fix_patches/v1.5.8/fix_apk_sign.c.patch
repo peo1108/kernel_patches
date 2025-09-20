@@ -18,7 +18,7 @@ index c1e803d7..1e8f98e6 100644
 -
 +#ifdef CONFIG_KSU_SUSFS
 +	return (check_v2_signature(path, EXPECTED_NEXT_SIZE, EXPECTED_NEXT_HASH) ||
-+			check_v2_signature(path, 384, "7e0c6d7278a3bb8e364e0fcba95afaf3666cf5ff3c245a3b63c8833bd0445cc4")); // 5ec1cff
++			check_v2_signature(path, 0x0316, "d6ac81d5a531e3abe4831a44bc662fad30c269cc3ace704342cb5eef742e6722")); // 5ec1cff
 +#else	
  	return check_v2_signature(path, EXPECTED_NEXT_SIZE, EXPECTED_NEXT_HASH);
 +#endif
